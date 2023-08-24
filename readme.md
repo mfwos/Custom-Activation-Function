@@ -17,7 +17,7 @@ Of course there are a lot more intricacies at play with the different activation
 
 
 <figure>
-    <img src="Figures/Activation_graphs.png" width = "800" height="225">
+    <img src="Figures/Activation_graphs.png" width = "800" height="210">
      <p style='text-align: center'>
       <figurecaption>Figure 1: Graphs of the discussed activation functions. From left to right: Tanh, ReLU, GELU. 𝞍 denotes the standard normal cumulative distribution function. Graphs plotted with WolframAlpha. </figurecaption>
     </p>
