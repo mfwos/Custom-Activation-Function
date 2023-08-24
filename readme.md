@@ -17,7 +17,7 @@ Of course there are a lot more intricacies at play with the different activation
 
 
 <figure>
-    <img src="Figures/Activation_graphs.png" width = "800" height="250">
+    <img src="Figures/Activation_graphs.png" width = "800" height="225">
      <p style='text-align: center'>
       <figurecaption>Figure 1: Graphs of the discussed activation functions. From left to right: Tanh, ReLU, GELU. 𝞍 denotes the standard normal cumulative distribution function. Graphs plotted with WolframAlpha. </figurecaption>
     </p>
@@ -26,7 +26,7 @@ Of course there are a lot more intricacies at play with the different activation
 The three functions introduced are prominent examples of functions that have been tested by researchers and proved to do well. Now let's see what a neural network comes up with when allowed to 'choose' (that is learn via training) its own activation function. To do so, we will replace the non-linearities within our network with a smaller network. That is after calculating the linear combinantion of all inputs into a node instead of applying a pre determined non-linear function we let the linear combination run through a separate smaller network. This smaller network will be the same for all nodes in the network. On top of that in order to actually work as a replacement for an usual activation function the smaller network must only take one single input as well as having a singular output as well. Figure 2 illustrates the replacement. Of course the smaller network needs its own non-linearities to produce a meaningful activation function, hence we will still be making use of the tried and trusted usual activation functions within the smaller network. However once fully trained we can compare the smaller network to said activation functions and interpret the usage of the smaller network as a replacement of the activation function with some other function described by the network. 
 
 <figure>
-    <img src="Figures/Network_activation_replacement.png" width = "800" height="250">
+    <img src="Figures/Network_activation_replacement.png" width = "800" height="280">
      <p style='text-align: center'>
       <figurecaption>Figure 2: For this project we replace the usual activation functions (here ReLU) by a small univariate one-dimensional network that will be able to learn a custom activation function. The network that replaces the usual non-linearity is the same for all nodes of the outer network. </figurecaption>
     </p>
